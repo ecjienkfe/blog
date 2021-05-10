@@ -13,3 +13,5 @@ function route(rrr,pathname,response,postData){
         response.end()
     }
 }
+
+exports.route=route

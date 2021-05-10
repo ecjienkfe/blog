@@ -2,7 +2,7 @@
 var http=require('http')
 var url=require('url')
 
-function strat(route,rrr){
+function strat(){
     function onRequest(request,response){
         var pathname=url.parse(request.url).pathname
         response.wrriteHead(200,{"Content-Type":"text/plain"})

@@ -9,3 +9,5 @@ function strat(route,rrr){
     }
 http.createServer(onRquest).listen(8888)
 }
+
+exports.start=start

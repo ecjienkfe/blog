@@ -5,7 +5,8 @@ var url=require('url')
 function strat(route,rrr){
     function onRequest(request,response){
         var pathname=url.parse(request.url).pathname
-        route(rrr,pathname,request,response)
+        var postData="sfggggffg"
+        route(rrr,pathname,response,postData)
     }
 http.createServer(onRquest).listen(8888)
 }

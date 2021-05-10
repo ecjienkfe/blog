@@ -2,9 +2,10 @@
 var http=require('http')
 var url=require('url')
 
-function strat(router.route,rrr){
+function strat(route,rrr){
     function onRequest(request,response){
-        pathname=
+        var pathname=url.parse(request.url).pathname
+        route
     }
 http.createServer(onRquest).listen(8888)
 }

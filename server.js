@@ -2,16 +2,16 @@
 var http=require("http")
 //var url=require("url")
 
-function strat(){
+function strat(route,rrr){
     function onRequest(request,response){
-        //var pathname=url.parse(request.url).pathname
+        var pathname=url.parse(request.url).pathname
         response.wrriteHead(200,{"Content-Type":"text/plain"})
         response.write("yyyyyy")
         response.end()
         //var postData="sfggggffg"
         //route(rrr,pathname,response,postData)
     }
-http.createServer(onRquest).listen(8888)
+http.createServer(onRequest).listen(8888)
 }
 
 exports.start=start

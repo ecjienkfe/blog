@@ -1,10 +1,10 @@
 //监听服务器端口并作出响应
-var http=require('http')
-var url=require('url')
+var http=require("http")
+//var url=require("url")
 
 function strat(){
     function onRequest(request,response){
-        var pathname=url.parse(request.url).pathname
+        //var pathname=url.parse(request.url).pathname
         response.wrriteHead(200,{"Content-Type":"text/plain"})
         response.write("yyyyyy")
         response.end()

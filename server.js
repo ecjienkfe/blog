@@ -1,6 +1,6 @@
 //监听服务器端口并作出响应
 var http=require("http")
-//var url=require("url")
+var url=require("url")
 
 function strat(route,rrr){
     function onRequest(request,response){

@@ -6,4 +6,4 @@ var rrr=require('./rrr')
 rrr["/"]=rrr.start()
 
 
-server.start(rrr,pathname)
+server.start(router.route,rrr)
